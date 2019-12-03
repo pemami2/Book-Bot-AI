@@ -47,8 +47,8 @@ int main(int argc, char const *argv[]) {
     expected.push_back("dell,");
     assertVectorEquals("Values : SleepyHollow", expected, SleepyHollow.getValues("woody"));
 
-    assertEquals("GenerateSentence : Frankenstein", "But it did this, and the cottagers.", Frankenstein.generateSentence());
-    assertEquals("GenerateSentence : Sleepy Hollow", "In this fearful pleasure was now Ichabod laid.", SleepyHollow.generateSentence());
+    assertEquals("GenerateSentence : Frankenstein", "Clerval entreating me invincible repugnance to reflection.", Frankenstein.generateSentence());
+    assertEquals("GenerateSentence : Sleepy Hollow", "As Ichabod.", SleepyHollow.generateSentence());
 
     cout << endl << testCount << " tests passed out of " << testTotal << " total tests" << endl;
     return 0;
