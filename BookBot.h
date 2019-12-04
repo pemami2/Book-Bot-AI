@@ -87,7 +87,7 @@ std::string BookBot::generateSentence() {
 
 	while (key != "$") { // check to see if at the end of the sentence
 		string new_word = markov_chain[key].at(rand() % (markov_chain[key].size()));// randomly select a word from key's vector and save as new word
-		if (new_word == "." || new_word == "!" || new_word == "?" || new_word == "^") { //check to see if we are at the begininng or end of sentence
+		if (new_word == "." || new_word == "!" || new_word == "?" || key == "^") { //check to see if we are at the begininng or end of sentence
 			sentence = sentence + new_word; // insert the punctuation at the end of the sentence without a space
 			key = new_word; // update the key with the new word
 		}
